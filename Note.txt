@@ -1,0 +1,39 @@
+http://localhost:3080/programming-languages?page=2
+http://localhost:3080/programming-languages?page=1
+
+Create http://localhost:3080/programming-languages/
+[{"key":"Content-Type","value":"application/x-www-form-urlencoded","description":""},{"key":"Accept","value":"application/json","description":""}]
+[{"key":"name","value":"trinh12","description":""},{"key":"age","value":"123","description":""}]
+post http://localhost:3080/programming-languages/
+delete http://localhost:3080/programming-languages/4
+put http://localhost:3080/programming-languages/9
+[{"key":"Content-Type","value":"application/x-www-form-urlencoded","description":""},{"key":"Accept","value":"application/json","description":""}]
+[{"key":"name","value":"trinh12","description":""},{"key":"age","value":"123","description":""}]
+
+CREATE TABLE `programming_languages`
+(
+  `id`            INT(11) NOT NULL auto_increment ,
+  `name`          VARCHAR(255) NOT NULL ,
+  `age` INT NOT NULL ,
+ )
+engine = innodb charset=utf8mb4 COLLATE utf8mb4_general_ci;
+
+
+INSERT INTO programming_languages(id,name,age) 
+VALUES
+(1,'JavaScript',1995),
+(2,'Python',1991),
+(3,'Java',1995),
+(4,'TypeScript',1995),
+(5,'C#',2000),
+(6,'PHP',1995),
+(7,'C++',1985),
+(8,'C',1972),
+(9,'Ruby',1995),
+(10,'R',1993),
+(11,'Objective-C',1995),
+(12,'Swift',2015),
+(13,'Kotlin',1995),
+(14,'Go',2009),
+(15,'Rust',2009),
+(16,'Scala',2009);
